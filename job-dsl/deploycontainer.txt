@@ -1,2 +1,2 @@
 docker service rm swarmdemo
-docker service create --detach -p 5500:5000  --replicas=1 --name swarmdemo anilskp/swarmdemo
+docker service create  -p 5500:5000  --name swarmdemo anilskp/swarmdemo
