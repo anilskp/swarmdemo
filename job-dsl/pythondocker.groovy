@@ -17,7 +17,7 @@ job('PythonFlask Docker example') {
             skipDecorate()
         }
     steps {
-        shell(readFileFromWorkspace('deploycontainer.txt'))
+        shell(readFileFromWorkspace('/job-dsl/deploycontainer.txt'))
          }      
     }
 }
