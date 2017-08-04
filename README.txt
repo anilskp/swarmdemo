@@ -1,1 +1,1 @@
-Demo app for DevOPS
+Demo app for DevOPS with Jenkins and Docker Swarm
