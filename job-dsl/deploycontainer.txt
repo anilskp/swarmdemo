@@ -1,4 +1,2 @@
-docker stop demoapp2
-docker rm -f demoapp2
-docker rmi -f anilskp/demoapp2
-docker run -d -p 5000:5000 --name demoapp2 anilskp/demoapp2:latest
+docker service rm swarmdemo
+docker service create -p 5500:5000 -d --replicas=1 --name swarmdemo anilskp/swarmdemo
