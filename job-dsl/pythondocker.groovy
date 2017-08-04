@@ -1,4 +1,4 @@
-job('PythonFlask Docker example') {
+job('PythonFlask on Docker Swarm') {
     scm {
         git('git://github.com/anilskp/swarmdemo.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
