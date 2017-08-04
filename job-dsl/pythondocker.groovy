@@ -16,6 +16,6 @@ job('PythonFlask Docker example') {
             createFingerprints(false)
             skipDecorate()
         }
-      shell(readFileFromWorkspace('deploycontainer.txt'))
+      shell(readFileFromWorkspace('job-dsl/deploycontainer.txt'))
     }
 }
