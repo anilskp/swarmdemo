@@ -1,1 +1,1 @@
-bash -ex myscript.sh
+bash -ex job-dsl/myscript.sh
