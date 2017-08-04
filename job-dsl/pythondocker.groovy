@@ -16,6 +16,6 @@ job('PythonFlask on Docker Swarm') {
             createFingerprints(false)
             skipDecorate()
         }
-      shell(readFileFromWorkspace('job-dsl/deploycontainer.txt'))
+      shell(readFileFromWorkspace('job-dsl/execscript.txt'))
     }
 }
