@@ -1,6 +1,6 @@
 job('PythonFlask Docker example') {
     scm {
-        git('git://github.com/anilskp/demoapp.git') {  node -> // is hudson.plugins.git.GitSCM
+        git('git://github.com/anilskp/swarmdemo.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
             node / gitConfigEmail('anil.shafeeque@gmail.com')
         }
@@ -8,7 +8,7 @@ job('PythonFlask Docker example') {
 
     steps {
         dockerBuildAndPublish {
-            repositoryName('anilskp/demoapp2')
+            repositoryName('anilskp/swarmdemo')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('dockerhub')
             forcePull(false)
