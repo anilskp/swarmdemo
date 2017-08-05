@@ -5,7 +5,7 @@ import socket
 from flask import render_template
  
 app = Flask(__name__)
-redis = Redis(host='192.168.100.20', port=6379)
+redis = Redis(host='redid', port=6379)
  
 hostname = socket.gethostname()
 @app.route('/')
