@@ -11,4 +11,8 @@ node {
        def app = docker.build("anilskp/pipelinebuild:${commit_id}", '.').push()
      }
    }
+   
+    stage ('Run Application') {
+    sh 'sh startscript.sh'
+    }
 }
